@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">صلّوا عليّ ﷺ</string>
+    <string name="notification_channel_name">الذكر العابر</string>
+    <string name="notification_channel_desc">تذكيرات قصيرة بالأذكار والصلاة على النبي ﷺ</string>
+</resources>

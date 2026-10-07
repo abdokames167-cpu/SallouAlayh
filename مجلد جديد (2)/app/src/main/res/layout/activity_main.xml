@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:layoutDirection="rtl">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/app_icon_preview"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="صلّوا عليّ ﷺ"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            android:textColor="@color/text"
+            android:gravity="center"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ذكرٌ يسير… وأجرٌ عظيم 🤍"
+            android:textSize="16sp"
+            android:textColor="@color/muted"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="54sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="صلاة على النبي اليوم"
+            android:textSize="16sp"
+            android:textColor="@color/muted"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="صلِّ على النبي ﷺ"
+            android:textSize="20sp"
+            android:layout_marginTop="18dp"/>
+
+        <Button
+            android:id="@+id/notificationsButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🔔 إعداد الذكر العابر"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📖 الأذكار"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="@color/text"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </LinearLayout>
+</ScrollView>

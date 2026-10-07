@@ -1,0 +1,9 @@
+<resources>
+    <color name="primary">#2E7D6A</color>
+    <color name="primary_dark">#174E42</color>
+    <color name="background">#F7F5EF</color>
+    <color name="card">#FFFFFF</color>
+    <color name="text">#26332F</color>
+    <color name="muted">#6D7773</color>
+    <color name="gold">#C99A32</color>
+</resources>
