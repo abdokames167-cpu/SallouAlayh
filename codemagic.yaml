@@ -1,0 +1,18 @@
+workflows:
+  android-native-debug:
+    name: صلّوا عليّ — Android APK
+    max_build_duration: 30
+    instance_type: linux_x2
+    scripts:
+      - name: Set Android SDK location
+        script: |
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
+      - name: Install Gradle
+        script: |
+          curl -L -o /tmp/gradle.zip https://services.gradle.org/distributions/gradle-8.11.1-bin.zip
+          unzip -q /tmp/gradle.zip -d /tmp
+      - name: Build APK
+        script: |
+          /tmp/gradle-8.11.1/bin/gradle assembleDebug --no-daemon
+    artifacts:
+      - app/build/outputs/apk/debug/*.apk
